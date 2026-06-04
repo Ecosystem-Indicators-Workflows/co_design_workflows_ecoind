@@ -4,23 +4,47 @@ format: html
 editor: visual
 ---
 
-# Familiarity
+## 1. Participant profile
 
-In this context, “n” represents the number of responses (or mentions) for each tool—in other words, how many participants reported their familiarity with that specific item. A higher *n* (e.g., QGIS with *n = 10*) means more participants contributed responses, so the distribution is more reliable and representative. A lower *n* (e.g., Markdown with *n = 5*) means the result is based on fewer responses and should be interpreted more cautiously.
+The workshop have a total of 26 participants. Participation was strongly dominated by academic contributors, with representatives from government agencies as the second most prevalent group. The participation was career-diverse but centered on early- to mid-career individuals, with a strong pipeline from postgraduate researchers. The sample was broad in ecosystem coverage, but terrestrial and cross-realm work dominated, while more specialised systems (like saline wetlands) were underrepresented.
 
-When a tool shows strong familiarity *and* has a high *n*, you can be confident that the tool is widely used and well understood. When a tool shows low familiarity but has a small *n*, it might represent a niche tool rather than a general gap
+Participation leans toward research-oriented thematic areas, but there was evidence of applied and policy-related applications such as ecosystem condition, recovery, and accounting, indicating a mixed but research-heavy community.
 
-## Analytical tools
+![](plot_participation.png){fig-align="center"}
 
-Participants demonstrate strong familiarity with a small set of core tools, particularly RStudio, QGIS, and to a slightly lesser extent ArcGIS and Google Earth, where most responses fall within the comfort and learning zones. This indicates these tools are well established and can serve as the foundation of current workflows.
+## 2. Familiarity
 
-In contrast, tools such as Markdown occupy an intermediate position, with responses concentrated in the learning and stretching zones, suggesting they are known but not yet fully integrated into everyday use.
+### **2.1 What we did**
 
-Finally, tools like Kepler, MapInfo, and Quarto exhibit very low familiarity, with most responses in the stretching or beyond limits zones, indicating limited adoption and potential barriers to use.
+Generate FAIR workflows for ecosystem indicators involves working with different data collections, programming languages, data formats, analytical tools, and platforms. We designed the "Familiarity" exercise to build a shared understanding of participants’ experience across theses components of the workflow and identify strengths, gaps, and challenges in working with data, tools, and platforms.
+
+### 2.2 How we did it
+
+Participants firts saw a 20 minutes presentation explaining the main concepts, and demonstrating how the workflow looks like from an end-user perspective. After the presentation, participants were assigned to a team (5 - 7 people) and to a specific aspect of the workflow (e.g., data collection, programming languages, data formats, platforms, or analytical tools). This was a two-part exercise:
+
+1.  **Familiarity mapping**: Participants assessed their level of experience with different pre-defined items using a quick, intuitive placement exercise. For that, they placed each item within a given familiarity level (confort zone, learning zone, stretching my limits, and beyond my limits). If they know about items not provided in the board, they were encouraged to write it down in sticky notes.
+
+2.  **Practice reflection**: Participants documented (in sticky notes) how do their current practices align with their skills, capabilities, and available IT support, how they address challenges, and what tips and recommendations you can share?
+
+After completing their assigned board, participants were encouraged to move to a different board of their choice and do the steps 1 or 2.
+
+### 2.3 How we analyzed the data
+
+We then count how many times a given item was placed in a given familiarity level. In this context, “n” represents the number of responses (or mentions) for each item. In other words, how many participants reported their familiarity with that specific item. A higher *n* (e.g., QGIS with *n = 10*) means more participants contributed responses, so the distribution is more reliable and representative. A lower *n* (e.g., Markdown with *n = 5*) means the result is based on fewer responses and should be interpreted more cautiously.
+
+When a given item shows strong familiarity (comfort zone) *and* has a high *n*, you can be confident that the item is widely used and well understood. When a item shows high familiarity but has a small *n*, it might represent a niche tool rather than a general preference.
+
+### 2.4 Results-Analytical tools
+
+Participants demonstrated strong familiarity with a small set of core tools, particularly RStudio, QGIS, and to a slightly lesser extent ArcGIS and Google Earth Engenering, where most responses fall within the comfort and learning zones. This indicates these tools are well established and can serve as the foundation of current workflows.
+
+In contrast, tools such as Markdown, Quarto, and Jupyter notebooks occupy an intermediate position, with responses concentrated in the learning and stretching zones, suggesting they are known but not yet fully integrated into everyday use.
+
+Finally, tools like Kepler and MapInfo exhibit very low familiarity, with most responses in the stretching or beyond limits zones, indicating limited adoption and potential barriers to use.
 
 ![](plot_familiarity_analytical_tool.png){fig-align="center" width="400"}
 
-## Data collections
+### 1.5 Results - Data collections
 
 Participants appear to be familiar with a wide range of data sources, including climate (BOM), citizen science (eBird), marine data (AODN) and national research infrastructure (Research Data Australia, Find Environmental Data), where the majority of responses fall in the comfort zone, indicating strong familiarity and routine use.
 

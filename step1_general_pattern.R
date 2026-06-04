@@ -29,6 +29,8 @@ ecosystem_palette <- c(
 
 
 # 2. Participation profile -----
+participant |> n_distinct("participant_code") # 26 participants
+
 plot_career <- participant |>
   drop_na() |>
   filter(career_stage != "Other, ARDC Program Manager") |>
@@ -94,7 +96,7 @@ plot_application <- participant |>
 # Combine the plots
 ((plot_affiliation + plot_career) | (plot_realm + plot_application)) +
   plot_annotation(
-    title = "Participation profile showing the percentage distribution of respondents by career stage, affiliation, ecosystem realm, and application.",
+    title = "Participation profile showing the percentage distribution of respondents \nby career stage, affiliation, ecosystem realm, and application.",
     subtitle = "Values are calculated as proportions of the total sample (excluding missing data)."
   ) &
   theme(
@@ -103,7 +105,7 @@ plot_application <- participant |>
   )
 
 
-ggsave("output/plot_participation.png", width = 20, height = 5)
+ggsave("output/plot_participation.png", width = 14, height = 5)
 
 # 3. Familiarity ----
 ## 3.1 Base data frame ----
